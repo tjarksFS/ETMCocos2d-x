@@ -1,0 +1,22 @@
+dependencies: \
+  /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/base/CCDataVisitor.cpp \
+  /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/base/CCRef.h \
+  /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/base/CCPlatformMacros.h \
+  /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/2d/ccConfig.h \
+  /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/2d/../base/CCPlatformConfig.h \
+  /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/2d/platform/ios/CCPlatformDefine.h \
+  /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/base/CCBool.h \
+  /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/base/CCDataVisitor.h \
+  /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/base/CCInteger.h \
+  /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/2d/platform/CCCommon.h \
+  /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/base/CCFloat.h \
+  /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/base/CCDouble.h \
+  /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/base/CCString.h \
+  /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/base/CCArray.h \
+  /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/2d/ccCArray.h \
+  /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/2d/ccMacros.h \
+  /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/2d/../base/CCConsole.h \
+  /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/2d/platform/ios/CCStdC.h \
+  /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/base/CCDictionary.h \
+  /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/2d/uthash.h \
+  /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/base/CCSet.h

@@ -1,0 +1,350 @@
+TCocosDenshion iOS
+v6
+r1
+cCheck dependencies
+cCompileC build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/CDAudioManager.o /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDAudioManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/CocosDenshion.o /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CocosDenshion.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/SimpleAudioEngine.o /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/SimpleAudioEngine.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/SimpleAudioEngine_objc.o /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/SimpleAudioEngine_objc.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/CDOpenALSupport.o /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDOpenALSupport.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/tjarks/SliderPuzzle/SliderPuzzle/bin/debug/ios/libCocosDenshion\ iOS.a normal i386
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
+c0000000053119F8A0000000000000198
+t1393663882
+s408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
+c00000000531E5D3500000000000003B4
+t1394498869
+s948
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000531E5D45000000000000019E
+t1394498885
+s414
+
+N/Users/tjarks/SliderPuzzle/SliderPuzzle/bin/debug/ios/libCocosDenshion iOS.a
+t2
+s0
+
+N/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion iOS.build/Objects-normal/i386/CDAudioManager.o
+t1394935848
+s91092
+
+N/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion iOS.build/Objects-normal/i386/CDOpenALSupport.o
+t1394935849
+s14396
+
+N/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion iOS.build/Objects-normal/i386/CocosDenshion iOS.LinkFileList
+c00000000532508270000000000000335
+t1394935847
+s821
+
+N/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion iOS.build/Objects-normal/i386/CocosDenshion.o
+t1394935848
+s124848
+
+N/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion iOS.build/Objects-normal/i386/SimpleAudioEngine.o
+t1394935851
+s72228
+
+N/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion iOS.build/Objects-normal/i386/SimpleAudioEngine_objc.o
+t1394935849
+s36328
+
+N/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDAudioManager.m
+c000000005323C684000000000000781D
+t1394853508
+s30749
+
+N/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDOpenALSupport.m
+c000000005323C6840000000000002AA4
+t1394853508
+s10916
+
+N/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CocosDenshion.m
+c000000005323C684000000000000CE44
+t1394853508
+s52804
+
+N/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/SimpleAudioEngine.mm
+c000000005323C6840000000000001DE5
+t1394853508
+s7653
+
+N/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/SimpleAudioEngine_objc.m
+c000000005323C6840000000000001663
+t1394853508
+s5731
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesde75f6a73fd5b841^fa5effa73fd5b841^---0#1#1#--18"Check dependencies36"E970515E-E710-48A9-AAAF-A8C001924999-
+
+CCompileC build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/CDAudioManager.o /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDAudioManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s416628647.998119
+e416628648.796171
+r1
+xCompileC
+xbuild/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion iOS.build/Objects-normal/i386/CDAudioManager.o
+x/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDAudioManager.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDAudioManager.m
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDAudioManager.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CocosDenshion.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDConfig.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDOpenALSupport.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDAudioManager.m282"[1mCompileC[0m build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/CDAudioManager.o [1m/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDAudioManager.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler18b1ffa73fd5b841^f7cbcba83fd5b841^---0#0#1#-19%DVTDocumentLocation2@87"file:///Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDAudioManager.m0000000000000000^4420"[1mCompileC[0m build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/CDAudioManager.o [1m/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDAudioManager.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/android-sdk/sdk/tools:/Applications/android-sdk/sdk/platform-tools:/Applications/android-sdk/sdk:/Applications/android-ndk-r9d:/Applications/cocos2d-x-3.0rc0/tools/cocos2d-console/bin::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:”./“:”~”:”~/tools”:”./“:”~”:”~/tools”"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Werror=incompatible-pointer-types -Werror-implicit-function-declaration -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wno-int-conversion -Wbool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOS2D_DEBUG=1 -DUSE_FILE32API -DCC_ENABLE_CHIPMUNK_INTEGRATION=1 -DCC_TARGET_OS_IPHONE -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.1.1 -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/CocosDenshion\ iOS.hmap -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/.. -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/base -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/2d -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/physics -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/math/kazmath -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/2d/platform -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/audio/include -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/editor-support -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/ui -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../external/chipmunk/include/chipmunk -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../external -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/storage -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/2d/platform/ios -I/Users/tjarks/SliderPuzzle/SliderPuzzle/bin/debug/ios/include -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/DerivedSources/i386 -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/DerivedSources -F/Users/tjarks/SliderPuzzle/SliderPuzzle/bin/debug/ios -MMD -MT dependencies -MF /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/CDAudioManager.d --serialize-diagnostics /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/CDAudioManager.dia -c /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDAudioManager.m -o /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-norma36"064CAC5F-84BB-40BA-A0B0-695FB3C37EC9-
+b9F489E23-DC6B-4EE1-8C13-71CB655E277D
+
+CCompileC build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/CDOpenALSupport.o /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDOpenALSupport.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s416628649.304664
+e416628649.667688
+r1
+xCompileC
+xbuild/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion iOS.build/Objects-normal/i386/CDOpenALSupport.o
+x/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDOpenALSupport.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDOpenALSupport.m
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDOpenALSupport.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CocosDenshion.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDConfig.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDOpenALSupport.m284"[1mCompileC[0m build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/CDOpenALSupport.o [1m/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDOpenALSupport.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilercb2c4ea93fd5b841^bbedaaa93fd5b841^---0#0#1#-19%DVTDocumentLocation2@88"file:///Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDOpenALSupport.m0000000000000000^4426"[1mCompileC[0m build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/CDOpenALSupport.o [1m/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDOpenALSupport.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/android-sdk/sdk/tools:/Applications/android-sdk/sdk/platform-tools:/Applications/android-sdk/sdk:/Applications/android-ndk-r9d:/Applications/cocos2d-x-3.0rc0/tools/cocos2d-console/bin::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:”./“:”~”:”~/tools”:”./“:”~”:”~/tools”"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Werror=incompatible-pointer-types -Werror-implicit-function-declaration -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wno-int-conversion -Wbool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOS2D_DEBUG=1 -DUSE_FILE32API -DCC_ENABLE_CHIPMUNK_INTEGRATION=1 -DCC_TARGET_OS_IPHONE -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.1.1 -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/CocosDenshion\ iOS.hmap -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/.. -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/base -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/2d -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/physics -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/math/kazmath -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/2d/platform -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/audio/include -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/editor-support -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/ui -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../external/chipmunk/include/chipmunk -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../external -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/storage -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/2d/platform/ios -I/Users/tjarks/SliderPuzzle/SliderPuzzle/bin/debug/ios/include -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/DerivedSources/i386 -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/DerivedSources -F/Users/tjarks/SliderPuzzle/SliderPuzzle/bin/debug/ios -MMD -MT dependencies -MF /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/CDOpenALSupport.d --serialize-diagnostics /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/CDOpenALSupport.dia -c /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDOpenALSupport.m -o /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal36"5D73ABDA-0C29-44CD-83E8-5746E540C913-
+b9F489E23-DC6B-4EE1-8C13-71CB655E277D
+
+CCompileC build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/CocosDenshion.o /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CocosDenshion.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s416628647.999467
+e416628648.637599
+r1
+xCompileC
+xbuild/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion iOS.build/Objects-normal/i386/CocosDenshion.o
+x/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CocosDenshion.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CocosDenshion.m
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CocosDenshion.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDConfig.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDOpenALSupport.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CocosDenshion.m280"[1mCompileC[0m build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/CocosDenshion.o [1m/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CocosDenshion.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler481600a83fd5b841^e947a3a83fd5b841^---0#0#1#-19%DVTDocumentLocation2@86"file:///Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CocosDenshion.m0000000000000000^4414"[1mCompileC[0m build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/CocosDenshion.o [1m/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CocosDenshion.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/android-sdk/sdk/tools:/Applications/android-sdk/sdk/platform-tools:/Applications/android-sdk/sdk:/Applications/android-ndk-r9d:/Applications/cocos2d-x-3.0rc0/tools/cocos2d-console/bin::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:”./“:”~”:”~/tools”:”./“:”~”:”~/tools”"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Werror=incompatible-pointer-types -Werror-implicit-function-declaration -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wno-int-conversion -Wbool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOS2D_DEBUG=1 -DUSE_FILE32API -DCC_ENABLE_CHIPMUNK_INTEGRATION=1 -DCC_TARGET_OS_IPHONE -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.1.1 -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/CocosDenshion\ iOS.hmap -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/.. -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/base -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/2d -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/physics -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/math/kazmath -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/2d/platform -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/audio/include -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/editor-support -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/ui -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../external/chipmunk/include/chipmunk -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../external -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/storage -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/2d/platform/ios -I/Users/tjarks/SliderPuzzle/SliderPuzzle/bin/debug/ios/include -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/DerivedSources/i386 -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/DerivedSources -F/Users/tjarks/SliderPuzzle/SliderPuzzle/bin/debug/ios -MMD -MT dependencies -MF /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/CocosDenshion.d --serialize-diagnostics /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/CocosDenshion.dia -c /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CocosDenshion.m -o /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-norm36"1B2FEE9F-F4D3-4E04-8ACA-DEEEADFEE1D4-
+b9F489E23-DC6B-4EE1-8C13-71CB655E277D
+
+CCompileC build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/SimpleAudioEngine.o /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/SimpleAudioEngine.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s416628648.638280
+e416628651.789656
+r1
+xCompileC
+xbuild/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion iOS.build/Objects-normal/i386/SimpleAudioEngine.o
+x/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/SimpleAudioEngine.mm
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/SimpleAudioEngine.mm
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/include/SimpleAudioEngine.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/include/Export.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/SimpleAudioEngine_objc.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDAudioManager.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CocosDenshion.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDConfig.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDOpenALSupport.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/cocos2d.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/ccConfig.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/base/CCPlatformConfig.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCAction.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/base/CCRef.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/base/CCPlatformMacros.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/platform/ios/CCPlatformDefine.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/base/CCGeometry.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/ccMacros.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/base/CCConsole.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/platform/ios/CCStdC.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCActionInterval.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCNode.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/base/CCAffineTransform.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/math/kazmath/kazmath/kazmath.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/math/kazmath/kazmath/vec2.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/math/kazmath/kazmath/utility.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/math/kazmath/kazmath/vec3.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/math/kazmath/kazmath/mat3.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/math/kazmath/kazmath/mat4.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/math/kazmath/kazmath/quaternion.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/math/kazmath/kazmath/plane.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/math/kazmath/kazmath/aabb.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/math/kazmath/kazmath/ray2.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/math/kazmath/kazmath/ray3.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/base/CCArray.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/ccCArray.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/base/CCDataVisitor.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/platform/ios/CCGL.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/ccGLStateCache.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCGLProgram.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCScriptSupport.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/platform/CCCommon.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCTouch.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCEventTouch.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCEvent.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCEventKeyboard.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/base/CCSet.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCProtocols.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/ccTypes.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCTexture2D.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCEventDispatcher.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCEventListener.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/base/CCVector.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCSpriteFrame.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCAnimation.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/base/CCValue.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCActionCamera.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCActionManager.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCActionEase.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCActionPageTurn3D.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCActionGrid3D.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCActionGrid.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCActionInstant.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCActionProgressTimer.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCActionTiledGrid.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCActionTween.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCActionCatmullRom.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCTweenFunction.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCAtlasNode.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/renderer/CCQuadCommand.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/renderer/CCRenderCommand.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/math/kazmath/kazmath/GL/matrix.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/renderer/CCRenderCommandPool.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/base/CCDictionary.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/uthash.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/base/CCString.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/base/CCMap.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/base/CCAutoreleasePool.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/base/CCInteger.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/base/CCFloat.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/base/CCDouble.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/base/CCBool.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/base/CCNS.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/base/CCData.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCDrawingPrimitives.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCDrawNode.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/renderer/CCCustomCommand.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCGrabber.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCConfiguration.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCGrid.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCDirector.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCLabelAtlas.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCEventType.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCLabelTTF.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCLabelBMFont.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCLabel.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCSpriteBatchNode.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCTextureAtlas.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/renderer/CCBatchCommand.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCFontAtlas.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCLayer.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCScene.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/physics/CCPhysicsWorld.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCTransition.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCTransitionPageTurn.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCTransitionProgress.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCMenu.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCMenuItem.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCClippingNode.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/renderer/CCGroupCommand.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCMotionStreak.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCProgressTimer.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCSprite.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/physics/CCPhysicsBody.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/physics/CCPhysicsShape.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCRenderTexture.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/platform/CCImage.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCNodeGrid.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCParticleBatchNode.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCParticleSystem.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCParticleExamples.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCParticleSystemQuad.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/renderer/CCFrustum.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/renderer/CCMaterialManager.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/renderer/CCRenderMaterial.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/renderer/CCRenderer.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/physics/CCPhysicsContact.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCEventListenerCustom.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCEventCustom.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/physics/CCPhysicsJoint.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/platform/CCDevice.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/platform/CCFileUtils.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/platform/CCSAXParser.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/platform/CCThread.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/platform/ios/CCApplication.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/platform/CCApplicationProtocol.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/platform/ios/CCGLView.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/platform/CCGLViewProtocol.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCShaderCache.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/ccShaders.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCAnimationCache.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCSpriteFrameCache.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/ccUTF8.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCNotificationCenter.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCProfiling.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCUserDefault.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCVertex.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCIMEDelegate.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCIMEDispatcher.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCTextFieldTTF.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCTextureCache.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCParallaxNode.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCTMXLayer.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCTMXObjectGroup.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCTMXXMLParser.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCTMXTiledMap.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCTileMapAtlas.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCEventListenerTouch.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCEventListenerKeyboard.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCEventListenerMouse.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCEventMouse.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCEventAcceleration.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCEventListenerAcceleration.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCScheduler.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCComponent.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCComponentContainer.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/2d/CCDeprecated.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compile /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/SimpleAudioEngine.mm291"[1mCompileC[0m build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/SimpleAudioEngine.o [1m/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/SimpleAudioEngine.mm[0m normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compilerde93a3a83fd5b841^0588caab3fd5b841^---0#0#1#-19%DVTDocumentLocation2@91"file:///Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/SimpleAudioEngine.mm0000000000000000^4516"[1mCompileC[0m build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/SimpleAudioEngine.o [1m/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/SimpleAudioEngine.mm[0m normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/android-sdk/sdk/tools:/Applications/android-sdk/sdk/platform-tools:/Applications/android-sdk/sdk:/Applications/android-ndk-r9d:/Applications/cocos2d-x-3.0rc0/tools/cocos2d-console/bin::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:”./“:”~”:”~/tools”:”./“:”~”:”~/tools”"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Werror=incompatible-pointer-types -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wnon-virtual-dtor -Woverloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wno-int-conversion -Wbool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -DCOCOS2D_DEBUG=1 -DUSE_FILE32API -DCC_ENABLE_CHIPMUNK_INTEGRATION=1 -DCC_TARGET_OS_IPHONE -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.1.1 -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/CocosDenshion\ iOS.hmap -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/.. -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/base -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/2d -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/physics -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/math/kazmath -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/2d/platform -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/audio/include -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/editor-support -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/ui -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../external/chipmunk/include/chipmunk -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../external -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/storage -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/2d/platform/ios -I/Users/tjarks/SliderPuzzle/SliderPuzzle/bin/debug/ios/include -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/DerivedSources/i386 -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/DerivedSources -F/Users/tjarks/SliderPuzzle/SliderPuzzle/bin/debug/ios -MMD -MT dependencies -MF /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/SimpleAudioEngine.d --serialize-diagnostics /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/SimpleAudioEngine.dia -c /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/SimpleAudioEngine.mm -o /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i36"98E00594-6BCB-4927-A3CB-B5E84AA522CB-
+b9F489E23-DC6B-4EE1-8C13-71CB655E277D
+
+CCompileC build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/SimpleAudioEngine_objc.o /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/SimpleAudioEngine_objc.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s416628648.796602
+e416628649.304065
+r1
+xCompileC
+xbuild/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion iOS.build/Objects-normal/i386/SimpleAudioEngine_objc.o
+x/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/SimpleAudioEngine_objc.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/SimpleAudioEngine_objc.m
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/SimpleAudioEngine_objc.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDAudioManager.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CocosDenshion.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDConfig.h
+d/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/CDOpenALSupport.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"Compile /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/SimpleAudioEngine_objc.m298"[1mCompileC[0m build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/SimpleAudioEngine_objc.o [1m/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/SimpleAudioEngine_objc.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerf06bcca83fd5b841^cbf64da93fd5b841^---0#0#1#-19%DVTDocumentLocation2@95"file:///Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/SimpleAudioEngine_objc.m0000000000000000^4468"[1mCompileC[0m build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/SimpleAudioEngine_objc.o [1m/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/SimpleAudioEngine_objc.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/android-sdk/sdk/tools:/Applications/android-sdk/sdk/platform-tools:/Applications/android-sdk/sdk:/Applications/android-ndk-r9d:/Applications/cocos2d-x-3.0rc0/tools/cocos2d-console/bin::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:”./“:”~”:”~/tools”:”./“:”~”:”~/tools”"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Werror=incompatible-pointer-types -Werror-implicit-function-declaration -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wshadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wno-int-conversion -Wbool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOS2D_DEBUG=1 -DUSE_FILE32API -DCC_ENABLE_CHIPMUNK_INTEGRATION=1 -DCC_TARGET_OS_IPHONE -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.1.1 -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/CocosDenshion\ iOS.hmap -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/.. -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/base -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/2d -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/physics -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/math/kazmath -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/2d/platform -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/audio/include -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/editor-support -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/ui -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../external/chipmunk/include/chipmunk -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../external -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/storage -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/../cocos/2d/platform/ios -I/Users/tjarks/SliderPuzzle/SliderPuzzle/bin/debug/ios/include -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/DerivedSources/i386 -I/Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/DerivedSources -F/Users/tjarks/SliderPuzzle/SliderPuzzle/bin/debug/ios -MMD -MT dependencies -MF /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/SimpleAudioEngine_objc.d --serialize-diagnostics /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/SimpleAudioEngine_objc.dia -c /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/cocos/audio/ios/SimpleAudioEngine_objc.m -o /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/S36"D001C664-49DF-4C22-AEC6-743B92A01718-
+b9F489E23-DC6B-4EE1-8C13-71CB655E277D
+
+CLibtool /Users/tjarks/SliderPuzzle/SliderPuzzle/bin/debug/ios/libCocosDenshion\ iOS.a normal i386
+s416628651.793378
+e416628651.812453
+r1
+xLibtool
+x/Users/tjarks/SliderPuzzle/SliderPuzzle/bin/debug/ios/libCocosDenshion iOS.a
+xnormal
+xi386
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"[1mLibtool[0m /Users/tjarks/SliderPuzzle/SliderPuzzle/bin/debug/ios/libCocosDenshion\ iOS.a normal i386105"[1mLibtool[0m /Users/tjarks/SliderPuzzle/SliderPuzzle/bin/debug/ios/libCocosDenshion\ iOS.a normal i386a33ccbab3fd5b841^3716d0ab3fd5b841^---0#0#1#--1253"[1mLibtool[0m /Users/tjarks/SliderPuzzle/SliderPuzzle/bin/debug/ios/libCocosDenshion\ iOS.a normal i386    cd /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build    export IPHONEOS_DEPLOYMENT_TARGET=5.1.1    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/android-sdk/sdk/tools:/Applications/android-sdk/sdk/platform-tools:/Applications/android-sdk/sdk:/Applications/android-ndk-r9d:/Applications/cocos2d-x-3.0rc0/tools/cocos2d-console/bin::/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:”./“:”~”:”~/tools”:”./“:”~”:”~/tools”"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/tjarks/SliderPuzzle/SliderPuzzle/bin/debug/ios -filelist /Users/tjarks/SliderPuzzle/SliderPuzzle/cocos2d/build/build/cocos2d_libs.build/Debug-iphonesimulator/CocosDenshion\ iOS.build/Objects-normal/i386/CocosDenshion\ iOS.LinkFileList -o /Users/tjarks/SliderPuzzle/SliderPuzzle/bin/debug/ios/36"7A20C5CC-1741-4BED-8F8D-6A45A383CDB1-
+b9F489E23-DC6B-4EE1-8C13-71CB655E277D
+
