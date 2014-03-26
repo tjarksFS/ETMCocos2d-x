@@ -2,6 +2,7 @@
 
 SlideTile::SlideTile(void)
 {
+    moveRight = false;
 }
 
 SlideTile::~SlideTile(void)
@@ -16,20 +17,20 @@ Rect SlideTile::getRect()
 
 SlideTile* SlideTile::createWithTexture(Texture2D* aTexture)
 {
-    SlideTile* pPaddle = new SlideTile();
-    pPaddle->initWithTexture(aTexture);
-    pPaddle->autorelease();
+    SlideTile* tile = new SlideTile();
+    tile->initWithTexture(aTexture);
+    tile->autorelease();
     
-    return pPaddle;
+    return tile;
 }
 
 SlideTile* SlideTile::createWithTexture(Texture2D* aTexture, const cocos2d::Rect& rect)
 {
-    SlideTile* pPaddle = new SlideTile();
-    pPaddle->initWithTexture(aTexture, rect);
-    pPaddle->autorelease();
+    SlideTile* tile = new SlideTile();
+    tile->initWithTexture(aTexture, rect);
+    tile->autorelease();
     
-    return pPaddle;
+    return tile;
 }
 
 bool SlideTile::initWithTexture(Texture2D* aTexture)
@@ -107,8 +108,8 @@ void SlideTile::onTouchMoved(Touch* touch, Event* event)
     CCASSERT(_state == kPaddleStateGrabbed, "Paddle - Unexpected state!");
     
     auto touchPoint = touch->getLocation();
-    
-    setPosition( Point(touchPoint.x, touchPoint.y) );
+    if (moveRight)
+        setPosition( Point(touchPoint.x, touchPoint.y) );
 //    setPosition( Point(touchPoint.x, getPosition().y) );
 }
 
@@ -125,5 +126,27 @@ void SlideTile::onTouchEnded(Touch* touch, Event* event)
 {
     CCASSERT(_state == kPaddleStateGrabbed, "Paddle - Unexpected state!");
     
+    Size visibleSize = Director::getInstance()->getVisibleSize();
+    //Point origin = Director::getInstance()->getVisibleOrigin();
+    Point touchPos = touch->getLocation();
+    
+    Point finalPos;
+    finalPos.x = visibleSize.width / 2;
+    if (touchPos.x < visibleSize.width / 2 - getBoundingBox().size.width / 2) {
+        finalPos.x -= getBoundingBox().size.width;
+    }
+    else if (touchPos.x > visibleSize.width / 2 + getBoundingBox().size.width / 2) {
+        finalPos.x += getBoundingBox().size.width;
+    }
+    
+    finalPos.y = visibleSize.height / 2;
+    if (touchPos.y < visibleSize.height / 2 - getBoundingBox().size.height / 2) {
+        finalPos.y -= getBoundingBox().size.height;
+    }
+    else if (touchPos.y > visibleSize.height / 2 + getBoundingBox().size.height / 2) {
+        finalPos.y += getBoundingBox().size.height;
+    }
+
+    setPosition( finalPos );
     _state = kPaddleStateUngrabbed;
 } 

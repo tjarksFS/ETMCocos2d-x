@@ -12,8 +12,12 @@ typedef enum tagPaddleState
 
 class SlideTile : public Sprite, public Clonable
 {
+public:
     PaddleState        _state;
-    
+    bool               moveRight;
+    int                _id;
+    int                row;
+    int                col;
 public:
     SlideTile(void);
     virtual ~SlideTile(void);

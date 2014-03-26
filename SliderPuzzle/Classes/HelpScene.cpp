@@ -27,8 +27,10 @@ bool HelpScene::init()
         return false;
     }
 
-    Size visibleSize = Director::getInstance()->getVisibleSize();
-    Point origin = Director::getInstance()->getVisibleOrigin();
+    //CameraInterface::GetCameraPicture();
+    
+    cocos2d::Size visibleSize = Director::getInstance()->getVisibleSize();
+    cocos2d::Point origin = Director::getInstance()->getVisibleOrigin();
     
     /////////////////////////////
     // 2. add a menu item with "X" image, which is clicked to quit the program
@@ -40,12 +42,12 @@ bool HelpScene::init()
                                            "CloseSelected.png",
                                            CC_CALLBACK_1(HelpScene::menuCloseCallback, this));
     
-	closeItem->setPosition(Point(origin.x + visibleSize.width - closeItem->getContentSize().width/2 ,
+	closeItem->setPosition(cocos2d::Point(origin.x + visibleSize.width - closeItem->getContentSize().width/2 ,
                                  origin.y + closeItem->getContentSize().height/2));
     
     // create menu, it's an autorelease object
     auto menu = Menu::create(closeItem, NULL);
-    menu->setPosition(Point::ZERO);
+    menu->setPosition(cocos2d::Point::ZERO);
     this->addChild(menu, 1);
     
     /////////////////////////////
@@ -57,7 +59,7 @@ bool HelpScene::init()
     auto label = LabelTTF::create("Help Scene", "Arial", 24);
     
     // position the label on the center of the screen
-    label->setPosition(Point(origin.x + visibleSize.width/2,
+    label->setPosition(cocos2d::Point(origin.x + visibleSize.width/2,
                              origin.y + visibleSize.height - label->getContentSize().height));
     
     // add the label as a child to this layer
@@ -67,7 +69,7 @@ bool HelpScene::init()
     auto sprite = Sprite::create("HelloWorld.png");
     
     // position the sprite on the center of the screen
-    sprite->setPosition(Point(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
+    sprite->setPosition(cocos2d::Point(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
     
     // add the sprite as a child to this layer
     this->addChild(sprite, 0);
@@ -76,7 +78,7 @@ bool HelpScene::init()
     
     homeButton->setPosition(300, 300);
     auto homeButtonMenu = Menu::create(homeButton, nullptr);
-    homeButtonMenu->setPosition(Point::ZERO);
+    homeButtonMenu->setPosition(cocos2d::Point::ZERO);
     this->addChild(homeButtonMenu, 1);
     
     return true;
@@ -90,9 +92,10 @@ void HelpScene::homeButtonCallback(Ref* pSender) {
 
 void HelpScene::menuCloseCallback(Ref* pSender)
 {
-    Director::getInstance()->end();
+    //Director::getInstance()->end();
     
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-    exit(0);
+    CameraInterface::GetCameraPicture();
+    //exit(0);
 #endif
 }

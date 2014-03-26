@@ -7,7 +7,10 @@
 class GameScene : public cocos2d::Layer
 {
 private:
-    cocos2d::Sprite* board;
+    Vector<SlideTile*> tiles;
+    int grid[3][3];
+    int emptyRow;
+    int emptyCol;
 public:
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
     static cocos2d::Scene* createScene();
@@ -21,6 +24,8 @@ public:
 
     // implement the "static create()" method manually
     CREATE_FUNC(GameScene);
+    
+    void doStep(float delta);
 };
 
 #endif

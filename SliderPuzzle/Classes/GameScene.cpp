@@ -79,51 +79,95 @@ bool GameScene::init()
     slideTile->setScale(scale);
     slideTile->setPosition( Point(visibleSize.width / 2 - slideTile->getBoundingBox().size.width, visibleSize.height / 2 + slideTile->getBoundingBox().size.height) );
     addChild(slideTile, 0);
+    slideTile->_id = 1;
+    slideTile->row = 0;
+    slideTile->col = 0;
+    tiles.pushBack(slideTile);
     
     auto umRect = Rect(boardPic->getTextureRect().size.width/3, 0, boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height/3);
     slideTile = SlideTile::createWithTexture(boardPic->getTexture(), umRect);
     slideTile->setScale(scale);
     slideTile->setPosition( Point(visibleSize.width / 2, visibleSize.height / 2 + slideTile->getBoundingBox().size.height) );
     addChild(slideTile, 0);
+    slideTile->_id = 2;
+    slideTile->row = 0;
+    slideTile->col = 1;
+    tiles.pushBack(slideTile);
     
     auto urRect = Rect(boardPic->getTextureRect().size.width*2/3, 0, boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height/3);
     slideTile = SlideTile::createWithTexture(boardPic->getTexture(), urRect);
     slideTile->setScale(scale);
     slideTile->setPosition( Point(visibleSize.width / 2 + slideTile->getBoundingBox().size.width, visibleSize.height / 2 + slideTile->getBoundingBox().size.height) );
     addChild(slideTile, 0);
+    slideTile->_id = 3;
+    slideTile->row = 0;
+    slideTile->col = 2;
+    tiles.pushBack(slideTile);
     
     auto mlRect = Rect(0, boardPic->getTextureRect().size.height/3, boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height/3);
     slideTile = SlideTile::createWithTexture(boardPic->getTexture(), mlRect);
     slideTile->setScale(scale);
     slideTile->setPosition( Point(visibleSize.width / 2 - slideTile->getBoundingBox().size.width, visibleSize.height / 2) );
     addChild(slideTile, 0);
+    slideTile->_id = 4;
+    slideTile->row = 1;
+    slideTile->col = 0;
+    tiles.pushBack(slideTile);
     
     auto mRect = Rect(boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height/3, boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height/3);
     slideTile = SlideTile::createWithTexture(boardPic->getTexture(), mRect);
     slideTile->setScale(scale);
     slideTile->setPosition( Point(visibleSize.width / 2, visibleSize.height / 2) );
     addChild(slideTile, 0);
+    slideTile->_id = 5;
+    slideTile->row = 1;
+    slideTile->col = 1;
+    tiles.pushBack(slideTile);
     
     auto mrRect = Rect(boardPic->getTextureRect().size.width*2/3, boardPic->getTextureRect().size.height/3, boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height/3);
     slideTile = SlideTile::createWithTexture(boardPic->getTexture(), mrRect);
     slideTile->setScale(scale);
     slideTile->setPosition( Point(visibleSize.width / 2 + slideTile->getBoundingBox().size.width, visibleSize.height / 2) );
     addChild(slideTile, 0);
+    slideTile->_id = 6;
+    slideTile->row = 1;
+    slideTile->col = 2;
+    tiles.pushBack(slideTile);
     
     auto blRect = Rect(0, boardPic->getTextureRect().size.height*2/3, boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height/3);
     slideTile = SlideTile::createWithTexture(boardPic->getTexture(), blRect);
     slideTile->setScale(scale);
     slideTile->setPosition( Point(visibleSize.width / 2 - slideTile->getBoundingBox().size.width, visibleSize.height / 2 - slideTile->getBoundingBox().size.height) );
     addChild(slideTile, 0);
+    slideTile->_id = 7;
+    slideTile->row = 2;
+    slideTile->col = 0;
+    tiles.pushBack(slideTile);
     
     auto bmRect = Rect(boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height*2/3, boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height/3);
     slideTile = SlideTile::createWithTexture(boardPic->getTexture(), bmRect);
     slideTile->setScale(scale);
     slideTile->setPosition( Point(visibleSize.width / 2, visibleSize.height / 2 - slideTile->getBoundingBox().size.height) );
     addChild(slideTile, 0);
+    slideTile->_id = 8;
+    slideTile->row = 2;
+    slideTile->col = 1;
+    tiles.pushBack(slideTile);
     // add the sprite as a child to this layer
     //this->addChild(sprite, 0);
     
+    emptyRow = 2;
+    emptyCol = 2;
+    
+    grid[0][0] = 1;
+    grid[0][1] = 2;
+    grid[0][2] = 3;
+    grid[1][0] = 4;
+    grid[1][1] = 5;
+    grid[1][2] = 6;
+    grid[2][0] = 7;
+    grid[2][1] = 8;
+    grid[2][2] = -1;
     
     auto homeButton = MenuItemImage::create("homebutton.png", "homebutton.png",
                                             CC_CALLBACK_1(GameScene::homeButtonCallback, this));
@@ -133,8 +177,19 @@ bool GameScene::init()
     homeButtonMenu->setPosition(Point::ZERO);
     this->addChild(homeButtonMenu, 1);
     
-    
+    schedule( schedule_selector(GameScene::doStep) );
     return true;
+}
+
+void GameScene::doStep(float delta)
+{
+    for (auto& tile : tiles)
+    {
+        if (tile->_state == kPaddleStateGrabbed && tile->col + 1 == emptyCol && tile->row == emptyRow)
+        {
+            tile->moveRight = true;
+        }
+    }
 }
 
 void GameScene::homeButtonCallback(Ref* pSender) {
