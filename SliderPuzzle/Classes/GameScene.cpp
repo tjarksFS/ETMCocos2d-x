@@ -64,14 +64,65 @@ bool GameScene::init()
     this->addChild(label, 1);
     
     // add "HelloWorld" splash screen"
-    auto sprite = Sprite::create("numberpicture.png");
-    
-    // position the sprite on the center of the screen
-    sprite->setPosition(Point(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
 
-    sprite->setScale(visibleSize.height / sprite->getBoundingBox().size.height);
+    auto boardPic = Sprite::create("numberpicture.png");
+    // position the sprite on the center of the screen
+    //boardPic->setPosition(Point(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
+
+    float scale = (visibleSize.height / boardPic->getBoundingBox().size.height);
+    //auto boardTexture = boardPic->getTexture();
+    
+    auto ulRect = Rect(0, 0, boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height/3);
+    //auto ulSprite = Sprite::createWithTexture(boardTexture, ulRect);
+    
+    auto slideTile = SlideTile::createWithTexture(boardPic->getTexture(), ulRect);
+    slideTile->setScale(scale);
+    slideTile->setPosition( Point(visibleSize.width / 2 - slideTile->getBoundingBox().size.width, visibleSize.height / 2 + slideTile->getBoundingBox().size.height) );
+    addChild(slideTile, 0);
+    
+    auto umRect = Rect(boardPic->getTextureRect().size.width/3, 0, boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height/3);
+    slideTile = SlideTile::createWithTexture(boardPic->getTexture(), umRect);
+    slideTile->setScale(scale);
+    slideTile->setPosition( Point(visibleSize.width / 2, visibleSize.height / 2 + slideTile->getBoundingBox().size.height) );
+    addChild(slideTile, 0);
+    
+    auto urRect = Rect(boardPic->getTextureRect().size.width*2/3, 0, boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height/3);
+    slideTile = SlideTile::createWithTexture(boardPic->getTexture(), urRect);
+    slideTile->setScale(scale);
+    slideTile->setPosition( Point(visibleSize.width / 2 + slideTile->getBoundingBox().size.width, visibleSize.height / 2 + slideTile->getBoundingBox().size.height) );
+    addChild(slideTile, 0);
+    
+    auto mlRect = Rect(0, boardPic->getTextureRect().size.height/3, boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height/3);
+    slideTile = SlideTile::createWithTexture(boardPic->getTexture(), mlRect);
+    slideTile->setScale(scale);
+    slideTile->setPosition( Point(visibleSize.width / 2 - slideTile->getBoundingBox().size.width, visibleSize.height / 2) );
+    addChild(slideTile, 0);
+    
+    auto mRect = Rect(boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height/3, boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height/3);
+    slideTile = SlideTile::createWithTexture(boardPic->getTexture(), mRect);
+    slideTile->setScale(scale);
+    slideTile->setPosition( Point(visibleSize.width / 2, visibleSize.height / 2) );
+    addChild(slideTile, 0);
+    
+    auto mrRect = Rect(boardPic->getTextureRect().size.width*2/3, boardPic->getTextureRect().size.height/3, boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height/3);
+    slideTile = SlideTile::createWithTexture(boardPic->getTexture(), mrRect);
+    slideTile->setScale(scale);
+    slideTile->setPosition( Point(visibleSize.width / 2 + slideTile->getBoundingBox().size.width, visibleSize.height / 2) );
+    addChild(slideTile, 0);
+    
+    auto blRect = Rect(0, boardPic->getTextureRect().size.height*2/3, boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height/3);
+    slideTile = SlideTile::createWithTexture(boardPic->getTexture(), blRect);
+    slideTile->setScale(scale);
+    slideTile->setPosition( Point(visibleSize.width / 2 - slideTile->getBoundingBox().size.width, visibleSize.height / 2 - slideTile->getBoundingBox().size.height) );
+    addChild(slideTile, 0);
+    
+    auto bmRect = Rect(boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height*2/3, boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height/3);
+    slideTile = SlideTile::createWithTexture(boardPic->getTexture(), bmRect);
+    slideTile->setScale(scale);
+    slideTile->setPosition( Point(visibleSize.width / 2, visibleSize.height / 2 - slideTile->getBoundingBox().size.height) );
+    addChild(slideTile, 0);
     // add the sprite as a child to this layer
-    this->addChild(sprite, 0);
+    //this->addChild(sprite, 0);
     
     
     auto homeButton = MenuItemImage::create("homebutton.png", "homebutton.png",
@@ -83,10 +134,8 @@ bool GameScene::init()
     this->addChild(homeButtonMenu, 1);
     
     
-    
     return true;
 }
-
 
 void GameScene::homeButtonCallback(Ref* pSender) {
     Director::getInstance()->popScene();
@@ -100,3 +149,4 @@ void GameScene::menuCloseCallback(Ref* pSender)
     exit(0);
 #endif
 }
+

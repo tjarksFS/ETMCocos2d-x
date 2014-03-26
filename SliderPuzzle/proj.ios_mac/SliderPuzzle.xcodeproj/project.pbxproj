@@ -31,6 +31,8 @@
 		3E929AB618E130DE00E90877 /* numberpicture.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E929AB518E130DE00E90877 /* numberpicture.png */; };
 		3EC8AA1818D5EF750069B968 /* HelpScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3EC8AA1618D5EF750069B968 /* HelpScene.cpp */; };
 		3EC8AA1B18D5EF8A0069B968 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3EC8AA1918D5EF8A0069B968 /* GameScene.cpp */; };
+		3ECA76CC18E27233009A6D1A /* SlideTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3ECA76CA18E27233009A6D1A /* SlideTile.cpp */; };
+		3ECA76D118E2947C009A6D1A /* CameraInterface.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3ECA76D018E2947C009A6D1A /* CameraInterface.mm */; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10017EB989F00D1A890 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
 		503AE10117EB989F00D1A890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FC17EB989F00D1A890 /* main.m */; };
@@ -242,6 +244,10 @@
 		3EC8AA1718D5EF750069B968 /* HelpScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelpScene.h; path = ../Classes/HelpScene.h; sourceTree = "<group>"; };
 		3EC8AA1918D5EF8A0069B968 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameScene.cpp; path = ../Classes/GameScene.cpp; sourceTree = "<group>"; };
 		3EC8AA1A18D5EF8A0069B968 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = ../Classes/GameScene.h; sourceTree = "<group>"; };
+		3ECA76CA18E27233009A6D1A /* SlideTile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SlideTile.cpp; path = ../Classes/SlideTile.cpp; sourceTree = "<group>"; };
+		3ECA76CB18E27233009A6D1A /* SlideTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SlideTile.h; path = ../Classes/SlideTile.h; sourceTree = "<group>"; };
+		3ECA76CF18E2947C009A6D1A /* CameraInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraInterface.h; path = ios/CameraInterface.h; sourceTree = SOURCE_ROOT; };
+		3ECA76D018E2947C009A6D1A /* CameraInterface.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CameraInterface.mm; path = ios/CameraInterface.mm; sourceTree = SOURCE_ROOT; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503AE0FA17EB989F00D1A890 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ios/AppController.h; sourceTree = SOURCE_ROOT; };
@@ -342,6 +348,8 @@
 				503AE0FD17EB989F00D1A890 /* Prefix.pch */,
 				503AE0FE17EB989F00D1A890 /* RootViewController.h */,
 				503AE0FF17EB989F00D1A890 /* RootViewController.mm */,
+				3ECA76CF18E2947C009A6D1A /* CameraInterface.h */,
+				3ECA76D018E2947C009A6D1A /* CameraInterface.mm */,
 			);
 			name = ios;
 			path = Classes;
@@ -350,14 +358,16 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */,
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
+				1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */,
 				1AFAF8B616D35DE700DB1158 /* MainMenuScene.h */,
 				1AFAF8B516D35DE700DB1158 /* MainMenuScene.cpp */,
 				3EC8AA1718D5EF750069B968 /* HelpScene.h */,
 				3EC8AA1618D5EF750069B968 /* HelpScene.cpp */,
 				3EC8AA1A18D5EF8A0069B968 /* GameScene.h */,
 				3EC8AA1918D5EF8A0069B968 /* GameScene.cpp */,
+				3ECA76CB18E27233009A6D1A /* SlideTile.h */,
+				3ECA76CA18E27233009A6D1A /* SlideTile.cpp */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -699,7 +709,9 @@
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				3EC8AA1B18D5EF8A0069B968 /* GameScene.cpp in Sources */,
 				1AFAF8B816D35DE700DB1158 /* MainMenuScene.cpp in Sources */,
+				3ECA76D118E2947C009A6D1A /* CameraInterface.mm in Sources */,
 				3EC8AA1818D5EF750069B968 /* HelpScene.cpp in Sources */,
+				3ECA76CC18E27233009A6D1A /* SlideTile.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
