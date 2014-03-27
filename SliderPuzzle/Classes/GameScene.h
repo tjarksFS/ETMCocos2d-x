@@ -11,6 +11,7 @@ private:
     int grid[3][3];
     int emptyRow;
     int emptyCol;
+    int grabbedTileId;
 public:
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
     static cocos2d::Scene* createScene();
@@ -21,6 +22,7 @@ public:
     // a selector callback
     void menuCloseCallback(cocos2d::Ref* pSender);
     void homeButtonCallback(cocos2d::Ref* pSender);
+    void randButtonCallback(cocos2d::Ref* pSender);
 
     // implement the "static create()" method manually
     CREATE_FUNC(GameScene);

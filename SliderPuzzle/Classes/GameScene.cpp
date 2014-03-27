@@ -20,6 +20,7 @@ Scene* GameScene::createScene()
 // on "init" you need to initialize your instance
 bool GameScene::init()
 {
+    srand(time(0));
     //////////////////////////////
     // 1. super init first
     if ( !Layer::init() )
@@ -158,7 +159,7 @@ bool GameScene::init()
     
     emptyRow = 2;
     emptyCol = 2;
-    
+    grabbedTileId = 0;
     grid[0][0] = 1;
     grid[0][1] = 2;
     grid[0][2] = 3;
@@ -177,6 +178,15 @@ bool GameScene::init()
     homeButtonMenu->setPosition(Point::ZERO);
     this->addChild(homeButtonMenu, 1);
     
+    auto randButton = MenuItemImage::create("randbutton.png", "randbutton.png",
+                                            CC_CALLBACK_1(GameScene::randButtonCallback, this));
+    
+    randButton->setPosition(100, 300);
+    auto randButtonMenu = Menu::create(randButton, nullptr);
+    randButtonMenu->setPosition(Point::ZERO);
+    this->addChild(randButtonMenu, 1);
+
+    
     schedule( schedule_selector(GameScene::doStep) );
     return true;
 }
@@ -185,9 +195,38 @@ void GameScene::doStep(float delta)
 {
     for (auto& tile : tiles)
     {
-        if (tile->_state == kPaddleStateGrabbed && tile->col + 1 == emptyCol && tile->row == emptyRow)
+        if (tile->_state == kPaddleStateGrabbed)
         {
-            tile->moveRight = true;
+            grabbedTileId = tile->_id;
+            if (tile->col + 1 == emptyCol && tile->row == emptyRow)
+            {
+                tile->moveRight = true;
+            }
+            if (tile->col == emptyCol && tile->row + 1 == emptyRow)
+            {
+                tile->moveDown = true;
+            }
+            if (tile->col - 1 == emptyCol && tile->row == emptyRow)
+            {
+                tile->moveLeft = true;
+            }
+            if (tile->col == emptyCol && tile->row - 1 == emptyRow)
+            {
+                tile->moveUp = true;
+            }
+        }
+        if (tile->_state == kPaddleStateUngrabbed && grabbedTileId == tile->_id) {
+            for (int row = 0; row < 3; row++) {
+                for (int col = 0; col < 3; col++) {
+                    if (grid[row][col] == grabbedTileId && (row != tile->row || col != tile->col)) {
+                        grid[row][col] = -1;
+                        grid[emptyRow][emptyCol] = grabbedTileId;
+                        emptyRow = row;
+                        emptyCol = col;
+                    }
+                }
+            }
+            grabbedTileId = 0;
         }
     }
 }
@@ -195,6 +234,43 @@ void GameScene::doStep(float delta)
 void GameScene::homeButtonCallback(Ref* pSender) {
     Director::getInstance()->popScene();
 }
+
+void GameScene::randButtonCallback(Ref* pSender) {
+    for (int moves = 0; moves < 100; moves++)
+    {
+        int randRow = emptyRow;
+        int randCol = emptyCol;
+        int move = rand() % 4;
+        switch (move) {
+            case 1:
+                randRow--;
+                break;
+                
+            case 2:
+                randRow++;
+                break;
+                
+            case 3:
+                randCol--;
+                break;
+                
+            case 4:
+                randCol++;
+                break;
+                
+            default:
+                break;
+        }
+        
+        if (randRow >=0 && randRow < 3 && randCol >=0 && randCol < 3)
+        {
+            int temp = grid[emptyRow][emptyCol];
+            grid[emptyRow][emptyCol] = grid[randRow][randCol];
+            grid[randRow][randCol] = temp;
+        }
+    }
+}
+
 
 void GameScene::menuCloseCallback(Ref* pSender)
 {

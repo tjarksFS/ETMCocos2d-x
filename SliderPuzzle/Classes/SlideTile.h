@@ -12,9 +12,14 @@ typedef enum tagPaddleState
 
 class SlideTile : public Sprite, public Clonable
 {
+private:
+    cocos2d::Point touchStartPos;
 public:
     PaddleState        _state;
     bool               moveRight;
+    bool               moveLeft;
+    bool               moveUp;
+    bool               moveDown;
     int                _id;
     int                row;
     int                col;
