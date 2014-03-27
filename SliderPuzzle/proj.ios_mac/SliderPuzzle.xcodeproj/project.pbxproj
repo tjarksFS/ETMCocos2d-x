@@ -26,6 +26,8 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		3E62762D18E3F6A200A9F11E /* randbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E62762C18E3F6A200A9F11E /* randbutton.png */; };
+		3E62769618E48F4200A9F11E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E62769218E48F4200A9F11E /* Main.storyboard */; };
+		3E62769718E48F4200A9F11E /* CAMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E62769518E48F4200A9F11E /* CAMViewController.m */; };
 		3E8B458F18E3056C00EA3826 /* CameraInterfaceObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B458E18E3056C00EA3826 /* CameraInterfaceObjC.m */; };
 		3E906EBB18D5F3D300F9232E /* gamebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E906EB818D5F3D300F9232E /* gamebutton.png */; };
 		3E906EBC18D5F3D300F9232E /* helpbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E906EB918D5F3D300F9232E /* helpbutton.png */; };
@@ -239,6 +241,9 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3E62762C18E3F6A200A9F11E /* randbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = randbutton.png; path = ../Art/randbutton.png; sourceTree = "<group>"; };
+		3E62769318E48F4200A9F11E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		3E62769418E48F4200A9F11E /* CAMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAMViewController.h; path = ios/CAMViewController.h; sourceTree = SOURCE_ROOT; };
+		3E62769518E48F4200A9F11E /* CAMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CAMViewController.m; path = ios/CAMViewController.m; sourceTree = SOURCE_ROOT; };
 		3E8B458D18E3056C00EA3826 /* CameraInterfaceObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraInterfaceObjC.h; path = ios/CameraInterfaceObjC.h; sourceTree = SOURCE_ROOT; };
 		3E8B458E18E3056C00EA3826 /* CameraInterfaceObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraInterfaceObjC.m; path = ios/CameraInterfaceObjC.m; sourceTree = SOURCE_ROOT; };
 		3E906EB818D5F3D300F9232E /* gamebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gamebutton.png; path = ../Art/gamebutton.png; sourceTree = "<group>"; };
@@ -346,6 +351,9 @@
 		080E96DDFE201D6D7F000001 /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				3E62769118E48F4200A9F11E /* Base.lproj */,
+				3E62769418E48F4200A9F11E /* CAMViewController.h */,
+				3E62769518E48F4200A9F11E /* CAMViewController.m */,
 				5087E77117EB970100C73F5D /* Icons */,
 				503AE0FA17EB989F00D1A890 /* AppController.h */,
 				503AE0FB17EB989F00D1A890 /* AppController.mm */,
@@ -446,6 +454,15 @@
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
+		};
+		3E62769118E48F4200A9F11E /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				3E62769218E48F4200A9F11E /* Main.storyboard */,
+			);
+			name = Base.lproj;
+			path = ios/Base.lproj;
+			sourceTree = SOURCE_ROOT;
 		};
 		503AE0F517EB97AB00D1A890 /* Icons */ = {
 			isa = PBXGroup;
@@ -572,6 +589,8 @@
 				Japanese,
 				French,
 				German,
+				Base,
+				en,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
@@ -668,6 +687,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
+				3E62769618E48F4200A9F11E /* Main.storyboard in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
 				3E906EBD18D5F3D300F9232E /* homebutton.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
@@ -720,6 +740,7 @@
 				3EC8AA1B18D5EF8A0069B968 /* GameScene.cpp in Sources */,
 				1AFAF8B816D35DE700DB1158 /* MainMenuScene.cpp in Sources */,
 				3ECA76D118E2947C009A6D1A /* CameraInterface.mm in Sources */,
+				3E62769718E48F4200A9F11E /* CAMViewController.m in Sources */,
 				3EC8AA1818D5EF750069B968 /* HelpScene.cpp in Sources */,
 				3ECA76CC18E27233009A6D1A /* SlideTile.cpp in Sources */,
 			);
@@ -789,6 +810,17 @@
 			targetProxy = 1AC6FB2C180E99E1004C840B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3E62769218E48F4200A9F11E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E62769318E48F4200A9F11E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {

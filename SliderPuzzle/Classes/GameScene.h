@@ -12,6 +12,10 @@ private:
     int emptyRow;
     int emptyCol;
     int grabbedTileId;
+    bool won;
+    cocos2d::LabelTTF* wonLabel;
+    cocos2d::LabelTTF* timeLabel;
+    time_t startTime;
 public:
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
     static cocos2d::Scene* createScene();
@@ -28,6 +32,8 @@ public:
     CREATE_FUNC(GameScene);
     
     void doStep(float delta);
+    void setAllTiles();
+    bool checkWin();
 };
 
 #endif

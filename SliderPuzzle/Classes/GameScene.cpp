@@ -56,7 +56,6 @@ bool GameScene::init()
     // create and initialize a label
     
     auto label = LabelTTF::create("Game Scene", "Arial", 24);
-    
     // position the label on the center of the screen
     label->setPosition(Point(origin.x + visibleSize.width/2,
                              origin.y + visibleSize.height - label->getContentSize().height));
@@ -156,7 +155,6 @@ bool GameScene::init()
     tiles.pushBack(slideTile);
     // add the sprite as a child to this layer
     //this->addChild(sprite, 0);
-    
     emptyRow = 2;
     emptyCol = 2;
     grabbedTileId = 0;
@@ -169,11 +167,14 @@ bool GameScene::init()
     grid[2][0] = 7;
     grid[2][1] = 8;
     grid[2][2] = -1;
-    
+    won = false;
+    wonLabel = nullptr;
+    time(&startTime);
+
     auto homeButton = MenuItemImage::create("homebutton.png", "homebutton.png",
                                             CC_CALLBACK_1(GameScene::homeButtonCallback, this));
     
-    homeButton->setPosition(300, 300);
+    homeButton->setPosition(15 + homeButton->getBoundingBox().size.width / 2, visibleSize.height - 15 - homeButton->getBoundingBox().size.height);
     auto homeButtonMenu = Menu::create(homeButton, nullptr);
     homeButtonMenu->setPosition(Point::ZERO);
     this->addChild(homeButtonMenu, 1);
@@ -181,18 +182,53 @@ bool GameScene::init()
     auto randButton = MenuItemImage::create("randbutton.png", "randbutton.png",
                                             CC_CALLBACK_1(GameScene::randButtonCallback, this));
     
-    randButton->setPosition(100, 300);
+    randButton->setPosition(15 + randButton->getBoundingBox().size.width / 2, visibleSize.height - 15 - randButton->getBoundingBox().size.height - homeButton->getBoundingBox().size.height - 20);
     auto randButtonMenu = Menu::create(randButton, nullptr);
     randButtonMenu->setPosition(Point::ZERO);
     this->addChild(randButtonMenu, 1);
 
+    timeLabel = LabelTTF::create("30 seconds", "Arial", 24);
+    // position the label on the center of the screen
+    timeLabel->setPosition(Point(origin.x + visibleSize.width - timeLabel->getContentSize().width/2 - 20, origin.y + visibleSize.height - timeLabel->getContentSize().height - 15));
     
+    // add the label as a child to this layer
+    this->addChild(timeLabel, 1);
+    
+    randButtonCallback(this);
     schedule( schedule_selector(GameScene::doStep) );
     return true;
 }
 
 void GameScene::doStep(float delta)
 {
+    if (won) {
+        return;
+    }
+ 
+    time_t endTime;
+    time(&endTime);
+    double timeDiff = difftime(endTime, startTime);
+    std::ostringstream oss;
+    oss << 30.0 - timeDiff << " seconds";
+    timeLabel->setString(oss.str());
+    
+    if (30.0 - timeDiff < 0.0) {
+        Size visibleSize = Director::getInstance()->getVisibleSize();
+        Point origin = Director::getInstance()->getVisibleOrigin();
+        
+        auto label = LabelTTF::create("YOU LOSE...", "Arial", 48);
+        label->setColor(cocos2d::Color3B::RED);
+        // position the label on the center of the screen
+        label->setPosition(Point(origin.x + visibleSize.width/2,
+                                 origin.y + visibleSize.height/2));
+        
+        // add the label as a child to this layer
+        this->addChild(label, 1);
+        wonLabel = label;
+        won = true;
+        return;
+    }
+    
     for (auto& tile : tiles)
     {
         if (tile->_state == kPaddleStateGrabbed)
@@ -229,6 +265,23 @@ void GameScene::doStep(float delta)
             grabbedTileId = 0;
         }
     }
+    
+    if ((won = checkWin()))
+    {
+        Size visibleSize = Director::getInstance()->getVisibleSize();
+        Point origin = Director::getInstance()->getVisibleOrigin();
+        
+        auto label = LabelTTF::create("YOU WIN!!", "Arial", 48);
+        label->setColor(cocos2d::Color3B::RED);
+        // position the label on the center of the screen
+        label->setPosition(Point(origin.x + visibleSize.width/2,
+                                 origin.y + visibleSize.height/2));
+        
+        // add the label as a child to this layer
+        this->addChild(label, 1);
+        wonLabel = label;
+    }
+    
 }
 
 void GameScene::homeButtonCallback(Ref* pSender) {
@@ -240,7 +293,7 @@ void GameScene::randButtonCallback(Ref* pSender) {
     {
         int randRow = emptyRow;
         int randCol = emptyCol;
-        int move = rand() % 4;
+        int move = rand() % 4 + 1;
         switch (move) {
             case 1:
                 randRow--;
@@ -264,13 +317,57 @@ void GameScene::randButtonCallback(Ref* pSender) {
         
         if (randRow >=0 && randRow < 3 && randCol >=0 && randCol < 3)
         {
+            tiles.at(grid[randRow][randCol]-1)->row = emptyRow;
+            tiles.at(grid[randRow][randCol]-1)->col = emptyCol;
             int temp = grid[emptyRow][emptyCol];
             grid[emptyRow][emptyCol] = grid[randRow][randCol];
             grid[randRow][randCol] = temp;
+            emptyRow = randRow;
+            emptyCol = randCol;
         }
+    }
+    won = false;
+    if (wonLabel != nullptr)
+    {
+        this->removeChild(wonLabel);
+        wonLabel = nullptr;
+    }
+    setAllTiles();
+    time(&startTime);
+}
+
+void GameScene::setAllTiles()
+{
+    Size visibleSize = Director::getInstance()->getVisibleSize();
+    for (auto& tile : tiles)
+    {
+        for (int row = 0; row < 3; row++) {
+            for (int col = 0; col < 3; col++) {
+                int moveHoriz = col - 1;
+                int moveVert = -1*(row-1);
+                if (grid[row][col] == tile->_id) {
+                    tile->setPosition( Point(visibleSize.width / 2 + moveHoriz * tile->getBoundingBox().size.width, visibleSize.height / 2 + moveVert * tile->getBoundingBox().size.height) );
+                    tile->row = row;
+                    tile->col = col;
+                }
+                
+            }
+        }
+        
     }
 }
 
+bool GameScene::checkWin()
+{
+    for (int row = 0; row < 3; row++) {
+        for (int col = 0; col < 3; col++) {
+            if (grid[row][col] != row * 3 + col + 1 && grid[row][col] != -1) {
+                return false;
+            }
+        }
+    }
+    return true;
+}
 
 void GameScene::menuCloseCallback(Ref* pSender)
 {
