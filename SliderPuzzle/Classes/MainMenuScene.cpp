@@ -2,14 +2,15 @@
 
 USING_NS_CC;
 
-Scene* MainMenuScene::createScene()
+Scene* MainMenuScene::createScene(const char* path)
 {
     // 'scene' is an autorelease object
     auto scene = Scene::create();
     
+    
     // 'layer' is an autorelease object
     auto layer = MainMenuScene::create();
-
+    layer->gamePic = path;
     // add layer as a child to scene
     scene->addChild(layer);
 
@@ -99,7 +100,7 @@ void MainMenuScene::helpButtonCallback(Ref* pSender) {
 }
 
 void MainMenuScene::gameButtonCallback(Ref* pSender) {
-    Director::getInstance()->pushScene(GameScene::createScene());
+    Director::getInstance()->pushScene(GameScene::createScene(gamePic));
 }
 
 void MainMenuScene::menuCloseCallback(Ref* pSender)

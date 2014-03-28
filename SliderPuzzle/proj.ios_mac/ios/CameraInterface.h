@@ -9,9 +9,10 @@
 //#import <UIKit/UIKit.h>
 
 
-
+/*
 class CameraInterface
 {
 public:
     static void GetCameraPicture();
 };
+*/

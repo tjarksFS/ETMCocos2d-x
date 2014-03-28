@@ -7,6 +7,7 @@
 class GameScene : public cocos2d::Layer
 {
 private:
+    char* gamePic;
     Vector<SlideTile*> tiles;
     int grid[3][3];
     int emptyRow;
@@ -18,19 +19,34 @@ private:
     time_t startTime;
 public:
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
-    static cocos2d::Scene* createScene();
+    static cocos2d::Scene* createScene(const char* gamePic);
 
     // Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
-    virtual bool init();
+    virtual bool init(const char* gamePic);
     
     // a selector callback
     void menuCloseCallback(cocos2d::Ref* pSender);
     void homeButtonCallback(cocos2d::Ref* pSender);
     void randButtonCallback(cocos2d::Ref* pSender);
-
-    // implement the "static create()" method manually
-    CREATE_FUNC(GameScene);
     
+    // implement the "static create()" method manually
+    //CREATE_FUNC(GameScene);
+    static GameScene* create(const char* gamePic)
+    {
+        GameScene *pRet = new GameScene();
+        if (pRet && pRet->init(gamePic))
+        {
+            pRet->autorelease();
+            return pRet;
+        }
+        else
+        {
+            delete pRet;
+            pRet = NULL;
+            return NULL;
+        }
+    }
+
     void doStep(float delta);
     void setAllTiles();
     bool checkWin();

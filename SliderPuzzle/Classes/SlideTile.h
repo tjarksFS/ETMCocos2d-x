@@ -27,7 +27,7 @@ public:
     SlideTile(void);
     virtual ~SlideTile(void);
     
-    Rect getRect();
+    cocos2d::Rect getRect();
     bool initWithTexture(Texture2D* aTexture);
     bool initWithTexture(Texture2D* aTexture, const cocos2d::Rect& rect);
     virtual void onEnter() override;

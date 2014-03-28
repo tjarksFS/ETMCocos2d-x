@@ -2,23 +2,22 @@
 
 USING_NS_CC;
 
-Scene* GameScene::createScene()
+Scene* GameScene::createScene(const char* gamePic)
 {
     // 'scene' is an autorelease object
     auto scene = Scene::create();
     
     // 'layer' is an autorelease object
-    auto layer = GameScene::create();
-    
+    auto layer = GameScene::create(gamePic);
+
     // add layer as a child to scene
     scene->addChild(layer);
-    
     // return the scene
     return scene;
 }
 
 // on "init" you need to initialize your instance
-bool GameScene::init()
+bool GameScene::init(const char* gamePic)
 {
     srand(time(0));
     //////////////////////////////
@@ -65,11 +64,13 @@ bool GameScene::init()
     
     // add "HelloWorld" splash screen"
 
-    auto boardPic = Sprite::create("numberpicture.png");
+    auto boardPic = Sprite::create(gamePic);//"numberpicture.png");
     // position the sprite on the center of the screen
     //boardPic->setPosition(Point(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
 
-    float scale = (visibleSize.height / boardPic->getBoundingBox().size.height);
+    float scaleVert = (visibleSize.height / boardPic->getBoundingBox().size.height);
+    float scaleHoriz = (visibleSize.width / boardPic->getBoundingBox().size.width);
+    float scale = scaleVert < scaleHoriz ? scaleVert : scaleHoriz;
     //auto boardTexture = boardPic->getTexture();
     
     auto ulRect = Rect(0, 0, boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height/3);

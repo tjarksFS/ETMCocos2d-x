@@ -10,16 +10,16 @@
 #import "CameraInterfaceObjC.h"
 #include "AppController.h"
 #include "RootViewController.h"
-#import "CAMViewController.h"
+//#import "ViewController.h"
 #import "cocos2d.h"
 #import "CCEAGLView.h"
 
-void CameraInterface::GetCameraPicture()
-{
+//void CameraInterface::GetCameraPicture()
+//{
     
     //CameraInterfaceObjC *ci = [[CameraInterfaceObjC alloc] init];
     //[ci GetCameraPicture];
-    CameraInterfaceObjC *ci = [[[CameraInterfaceObjC alloc] init] autorelease];
+    /*CameraInterfaceObjC *ci = [[[CameraInterfaceObjC alloc] init] autorelease];
 
     UIApplication* clientApp = [UIApplication sharedApplication];
     
@@ -30,8 +30,15 @@ void CameraInterface::GetCameraPicture()
     }
                 //ci.view.frame = CGRectMake(100, 100, 200, 200);
     [((AppController *)clientApp.delegate).viewController presentModalViewController:ci animated:YES];
-        //[controller.viewController.view addSubview:ci.view];
+    
+
+    [((AppController *)clientApp).viewController.view addSubview:ci.view];
     //controller.viewController.view = ci.view;
         //[ci GetCameraPicture];
-}
+     */
+    
+   // ViewController *cvc = [[ViewController alloc] init];
+    //[cvc selectPhoto:nil];
+    
+//}
 

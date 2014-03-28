@@ -27,7 +27,7 @@ bool HelpScene::init()
         return false;
     }
 
-    CameraInterface::GetCameraPicture();
+    //CameraInterface::GetCameraPicture();
     
     cocos2d::Size visibleSize = Director::getInstance()->getVisibleSize();
     cocos2d::Point origin = Director::getInstance()->getVisibleOrigin();
@@ -56,11 +56,11 @@ bool HelpScene::init()
     // add a label shows "Hello World"
     // create and initialize a label
     
-    auto label = LabelTTF::create("Help Scene", "Arial", 24);
+    auto label = LabelTTF::create("You have 30 seconds to complete the 8-puzzle!\nPress \"Random\" to restart", "Arial", 48);
     
     // position the label on the center of the screen
     label->setPosition(cocos2d::Point(origin.x + visibleSize.width/2,
-                             origin.y + visibleSize.height - label->getContentSize().height));
+                             origin.y + visibleSize.height/2));
     
     // add the label as a child to this layer
     this->addChild(label, 1);
@@ -95,7 +95,7 @@ void HelpScene::menuCloseCallback(Ref* pSender)
     Director::getInstance()->end();
     
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-    CameraInterface::GetCameraPicture();
+    //CameraInterface::GetCameraPicture();
     exit(0);
 #endif
 }
