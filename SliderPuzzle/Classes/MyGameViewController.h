@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface MyModalViewController : UIViewController
+@interface MyGameViewController : UIViewController
 
 @property (nonatomic, retain) NSString *filePath;
 

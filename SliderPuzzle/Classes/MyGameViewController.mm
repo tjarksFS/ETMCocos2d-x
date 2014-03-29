@@ -6,18 +6,18 @@
 //
 //
 
-#import "MyModalViewController.h"
+#import "MyGameViewController.h"
 
 #include "cocos2d.h"
 //#import "EAGLView.h"
 #import "CCEAGLView.h"
 #include "MainMenuScene.h"
 
-@interface MyModalViewController ()
+@interface MyGameViewController ()
 
 @end
 
-@implementation MyModalViewController
+@implementation MyGameViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -106,11 +106,11 @@
     //cocos2d::Sprite *spr = Sprite::create("numberpicture.png");
     
     // create a scene. it's an autorelease object
-    auto scene = MainMenuScene::createScene(self.filePath.UTF8String);
+    auto scene = MainMenuScene::createScene([self.filePath UTF8String]);
     
     // run
     director->runWithScene(scene);
-    director->resume();
+    //director->resume();
 }
 
 
@@ -118,20 +118,20 @@
     [super viewDidLoad];
     
     // create navigation bar with "Close" button
-    UINavigationBar *bar=[[[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 49)] autorelease];
-    [self.view insertSubview:bar atIndex:0];
+    //UINavigationBar *bar=[[[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 49)] autorelease];
+    //[self.view insertSubview:bar atIndex:0];
     
     
-    UIBarButtonItem *closeButton=[[[UIBarButtonItem alloc] initWithTitle:@"Close" style:UIBarButtonItemStyleDone target:self action:@selector(close)] autorelease];
+    //UIBarButtonItem *closeButton=[[[UIBarButtonItem alloc] initWithTitle:@"Close" style:UIBarButtonItemStyleDone target:self action:@selector(close)] autorelease];
     
-    UINavigationItem *item = [[UINavigationItem alloc] initWithTitle:@""];
-    item.rightBarButtonItem = closeButton;
-    item.hidesBackButton = YES;
-    [bar pushNavigationItem:item animated:NO];
-    [item release];
+    //UINavigationItem *item = [[UINavigationItem alloc] initWithTitle:@""];
+    //item.rightBarButtonItem = closeButton;
+    //item.hidesBackButton = YES;
+    //[bar pushNavigationItem:item animated:NO];
+    //[item release];
     
     // add opengl view on the remaining space of the view
-    [self loadOpenglScene:CGRectMake(0, bar.frame.size.height, self.view.frame.size.width, self.view.frame.size.height-bar.frame.size.height)];
+    [self loadOpenglScene:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
 }
 
 -(void)viewDidDisappear:(BOOL)animated {

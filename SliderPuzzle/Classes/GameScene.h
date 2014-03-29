@@ -9,6 +9,7 @@ class GameScene : public cocos2d::Layer
 private:
     char* gamePic;
     Vector<SlideTile*> tiles;
+    SlideTile* finalTile;
     int grid[3][3];
     int emptyRow;
     int emptyCol;

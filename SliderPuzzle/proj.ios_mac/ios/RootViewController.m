@@ -8,7 +8,7 @@
 
 #import "RootViewController.h"
 #import "AppController.h"
-#import "MyModalViewController.h"
+#import "MyGameViewController.h"
 
 @interface RootViewController ()
 
@@ -22,6 +22,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     image = NULL;
+    hasSelectedPhoto = NO;
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         
         UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
@@ -43,11 +44,17 @@
 }
 
 - (IBAction)startGame:(UIButton *)sender {
-    MyModalViewController *controller=[[[MyModalViewController alloc] init] autorelease];
+    MyGameViewController *controller=[[[MyGameViewController alloc] init] autorelease];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
     NSString *localFilePath = [documentsDirectory stringByAppendingPathComponent:@"chosenPic.png"];
-    controller.filePath = localFilePath;
+    
+    if (hasSelectedPhoto) {
+        controller.filePath = localFilePath;
+    }
+    else {
+        controller.filePath = @"numberpicture.png";
+    }
     
 
     [self presentModalViewController:controller animated:YES];
@@ -87,7 +94,7 @@
     NSString *localFilePath = [documentsDirectory stringByAppendingPathComponent:@"chosenPic.png"];
     
     [UIImagePNGRepresentation(image) writeToFile:localFilePath options:NSDataWritingAtomic error:NULL];
-
+    hasSelectedPhoto = YES;
     [picker dismissViewControllerAnimated:YES completion:NULL];
     
 }

@@ -65,6 +65,9 @@ bool GameScene::init(const char* gamePic)
     // add "HelloWorld" splash screen"
 
     auto boardPic = Sprite::create(gamePic);//"numberpicture.png");
+    
+    if (boardPic == nullptr)
+        boardPic = Sprite::create("numberpicture.png");
     // position the sprite on the center of the screen
     //boardPic->setPosition(Point(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
 
@@ -73,10 +76,23 @@ bool GameScene::init(const char* gamePic)
     float scale = scaleVert < scaleHoriz ? scaleVert : scaleHoriz;
     //auto boardTexture = boardPic->getTexture();
     
+    
+    auto brRect = Rect(boardPic->getTextureRect().size.width*2/3, boardPic->getTextureRect().size.height*2/3, boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height/3);
+    auto slideTile = SlideTile::createWithTexture(boardPic->getTexture(), brRect);
+    slideTile->setScale(scale);
+    slideTile->setPosition( Point(visibleSize.width / 2 + slideTile->getBoundingBox().size.width, visibleSize.height / 2 - slideTile->getBoundingBox().size.height) );
+    addChild(slideTile, 0);
+    slideTile->_id = 8;
+    slideTile->row = 2;
+    slideTile->col = 1;
+    finalTile = slideTile;
+    finalTile->setVisible(false);
+    finalTile->setOpacity(0);
+    
     auto ulRect = Rect(0, 0, boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height/3);
     //auto ulSprite = Sprite::createWithTexture(boardTexture, ulRect);
     
-    auto slideTile = SlideTile::createWithTexture(boardPic->getTexture(), ulRect);
+    slideTile = SlideTile::createWithTexture(boardPic->getTexture(), ulRect);
     slideTile->setScale(scale);
     slideTile->setPosition( Point(visibleSize.width / 2 - slideTile->getBoundingBox().size.width, visibleSize.height / 2 + slideTile->getBoundingBox().size.height) );
     addChild(slideTile, 0);
@@ -154,6 +170,11 @@ bool GameScene::init(const char* gamePic)
     slideTile->row = 2;
     slideTile->col = 1;
     tiles.pushBack(slideTile);
+    
+
+    
+    
+    
     // add the sprite as a child to this layer
     //this->addChild(sprite, 0);
     emptyRow = 2;
@@ -281,6 +302,10 @@ void GameScene::doStep(float delta)
         // add the label as a child to this layer
         this->addChild(label, 1);
         wonLabel = label;
+        
+        finalTile->setVisible(true);
+        auto fadeAction = FadeIn::create(2.0f);
+        finalTile->runAction(fadeAction);
     }
     
 }
@@ -334,6 +359,9 @@ void GameScene::randButtonCallback(Ref* pSender) {
         wonLabel = nullptr;
     }
     setAllTiles();
+    finalTile->setOpacity(0);
+    
+    finalTile->setVisible(false);
     time(&startTime);
 }
 

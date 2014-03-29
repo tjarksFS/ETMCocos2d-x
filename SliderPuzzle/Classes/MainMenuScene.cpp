@@ -10,7 +10,8 @@ Scene* MainMenuScene::createScene(const char* path)
     
     // 'layer' is an autorelease object
     auto layer = MainMenuScene::create();
-    layer->gamePic = path;
+    layer->gamePic = new char[strlen(path)+1];
+    strcpy(layer->gamePic, path);
     // add layer as a child to scene
     scene->addChild(layer);
 
@@ -65,10 +66,10 @@ bool MainMenuScene::init()
     this->addChild(label, 1);
 
     // add "HelloWorld" splash screen"
-    auto sprite = Sprite::create("HelloWorld.png");
+    auto sprite = Sprite::create("title.png");
 
     // position the sprite on the center of the screen
-    sprite->setPosition(Point(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
+    sprite->setPosition(Point(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y + 200));
 
     // add the sprite as a child to this layer
     this->addChild(sprite, 0);
@@ -79,8 +80,8 @@ bool MainMenuScene::init()
     auto gameButton = MenuItemImage::create("gamebutton.png", "gamebutton.png",
                                             CC_CALLBACK_1(MainMenuScene::gameButtonCallback, this));
                                             
-    helpButton->setPosition(100, 200);
-    gameButton->setPosition(200, 300);
+    helpButton->setPosition(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y- helpButton->getBoundingBox().size.height - 10);
+    gameButton->setPosition(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y );
                                             
     auto helpButtonmenu = Menu::create(helpButton, nullptr);
     helpButtonmenu->setPosition(Point::ZERO);

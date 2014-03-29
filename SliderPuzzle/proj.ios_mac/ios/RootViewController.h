@@ -11,6 +11,7 @@
 @interface RootViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 {
     UIImage *image;
+    bool hasSelectedPhoto;
 }
 - (IBAction)takePhoto:(UIButton *)sender;
 - (IBAction)selectPhoto:(UIButton *)sender;
