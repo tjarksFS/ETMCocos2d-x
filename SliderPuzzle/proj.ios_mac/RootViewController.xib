@@ -45,7 +45,7 @@
                         <action selector="selectPhoto:" destination="-1" eventType="touchUpInside" id="ZPG-Gj-CsI"/>
                     </connections>
                 </button>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="Take or Select Picture to  use in 8-Puzzle  Default picture will be used if none is selected" textAlignment="center" id="H7e-7G-AO0">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Take or Select Picture to  use in 8-Puzzle  Default picture will be used if none is selected" textAlignment="center" selectable="NO" id="H7e-7G-AO0">
                     <rect key="frame" x="40" y="109" width="240" height="136"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

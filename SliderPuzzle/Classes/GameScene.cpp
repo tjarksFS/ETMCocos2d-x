@@ -53,45 +53,37 @@ bool GameScene::init(const char* gamePic)
     
     // add a label shows "Hello World"
     // create and initialize a label
-    
-    auto label = LabelTTF::create("Game Scene", "Arial", 24);
-    // position the label on the center of the screen
-    label->setPosition(Point(origin.x + visibleSize.width/2,
-                             origin.y + visibleSize.height - label->getContentSize().height));
-    
-    // add the label as a child to this layer
-    this->addChild(label, 1);
-    
+
     // add "HelloWorld" splash screen"
 
     auto boardPic = Sprite::create(gamePic);//"numberpicture.png");
     
+    //In case of some error in retrieving the picture taken by camera, create with default picture.
     if (boardPic == nullptr)
         boardPic = Sprite::create("numberpicture.png");
-    // position the sprite on the center of the screen
-    //boardPic->setPosition(Point(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
-
+    
+    // Calculate the scale based on smaller of two dimensions
     float scaleVert = (visibleSize.height / boardPic->getBoundingBox().size.height);
     float scaleHoriz = (visibleSize.width / boardPic->getBoundingBox().size.width);
     float scale = scaleVert < scaleHoriz ? scaleVert : scaleHoriz;
     //auto boardTexture = boardPic->getTexture();
     
-    
+    // Initialize "invisible" tile so we can fade it in when puzzle is solved
     auto brRect = Rect(boardPic->getTextureRect().size.width*2/3, boardPic->getTextureRect().size.height*2/3, boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height/3);
     auto slideTile = SlideTile::createWithTexture(boardPic->getTexture(), brRect);
     slideTile->setScale(scale);
     slideTile->setPosition( Point(visibleSize.width / 2 + slideTile->getBoundingBox().size.width, visibleSize.height / 2 - slideTile->getBoundingBox().size.height) );
     addChild(slideTile, 0);
-    slideTile->_id = 8;
+    slideTile->_id = 9;
     slideTile->row = 2;
-    slideTile->col = 1;
+    slideTile->col = 2;
     finalTile = slideTile;
     finalTile->setVisible(false);
     finalTile->setOpacity(0);
     
-    auto ulRect = Rect(0, 0, boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height/3);
-    //auto ulSprite = Sprite::createWithTexture(boardTexture, ulRect);
     
+    // Create all other tiles and add to vector
+    auto ulRect = Rect(0, 0, boardPic->getTextureRect().size.width/3, boardPic->getTextureRect().size.height/3);
     slideTile = SlideTile::createWithTexture(boardPic->getTexture(), ulRect);
     slideTile->setScale(scale);
     slideTile->setPosition( Point(visibleSize.width / 2 - slideTile->getBoundingBox().size.width, visibleSize.height / 2 + slideTile->getBoundingBox().size.height) );
@@ -216,7 +208,10 @@ bool GameScene::init(const char* gamePic)
     // add the label as a child to this layer
     this->addChild(timeLabel, 1);
     
+    // Randomize game board
     randButtonCallback(this);
+    
+    // Set up doStep to be called
     schedule( schedule_selector(GameScene::doStep) );
     return true;
 }
@@ -226,15 +221,18 @@ void GameScene::doStep(float delta)
     if (won) {
         return;
     }
- 
     time_t endTime;
     time(&endTime);
-    double timeDiff = difftime(endTime, startTime);
+    int timeRamaining = (int)(30.0 - difftime(endTime, startTime));
+    if (timeRamaining < 0)
+    {
+        timeRamaining = 0;
+    }
     std::ostringstream oss;
-    oss << 30.0 - timeDiff << " seconds";
+    oss << timeRamaining << " seconds";
     timeLabel->setString(oss.str());
     
-    if (30.0 - timeDiff < 0.0) {
+    if (timeRamaining <= 0) {
         Size visibleSize = Director::getInstance()->getVisibleSize();
         Point origin = Director::getInstance()->getVisibleOrigin();
         
@@ -253,7 +251,7 @@ void GameScene::doStep(float delta)
     
     for (auto& tile : tiles)
     {
-        if (tile->_state == kPaddleStateGrabbed)
+        if (tile->_state == TileGrabbed)
         {
             grabbedTileId = tile->_id;
             if (tile->col + 1 == emptyCol && tile->row == emptyRow)
@@ -273,7 +271,7 @@ void GameScene::doStep(float delta)
                 tile->moveUp = true;
             }
         }
-        if (tile->_state == kPaddleStateUngrabbed && grabbedTileId == tile->_id) {
+        if (tile->_state == TileUngrabbed && grabbedTileId == tile->_id) {
             for (int row = 0; row < 3; row++) {
                 for (int col = 0; col < 3; col++) {
                     if (grid[row][col] == grabbedTileId && (row != tile->row || col != tile->col)) {
@@ -406,4 +404,3 @@ void GameScene::menuCloseCallback(Ref* pSender)
     exit(0);
 #endif
 }
-

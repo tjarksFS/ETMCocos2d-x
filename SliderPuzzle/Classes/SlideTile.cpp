@@ -40,7 +40,7 @@ bool SlideTile::initWithTexture(Texture2D* aTexture)
 {
     if( Sprite::initWithTexture(aTexture) )
     {
-        _state = kPaddleStateUngrabbed;
+        _state = TileUngrabbed;
     }
     
     return true;
@@ -50,7 +50,7 @@ bool SlideTile::initWithTexture(Texture2D* aTexture, const cocos2d::Rect& rect)
 {
     if( Sprite::initWithTexture(aTexture, rect) )
     {
-        _state = kPaddleStateUngrabbed;
+        _state = TileUngrabbed;
     }
     
     return true;
@@ -87,31 +87,17 @@ bool SlideTile::containsTouchLocation(Touch* touch)
 
 bool SlideTile::onTouchBegan(Touch* touch, Event* event)
 {
-    CCLOG("Paddle::onTouchBegan id = %d, x = %f, y = %f", touch->getID(), touch->getLocation().x, touch->getLocation().y);
-    
-    if (_state != kPaddleStateUngrabbed) return false;
+    if (_state != TileUngrabbed) return false;
     if ( !containsTouchLocation(touch) ) return false;
     
     touchStartPos = getPosition();
     
-    _state = kPaddleStateGrabbed;
-    CCLOG("return true");
+    _state = TileGrabbed;
     return true;
 }
 
 void SlideTile::onTouchMoved(Touch* touch, Event* event)
 {
-    // If it weren't for the TouchDispatcher, you would need to keep a reference
-    // to the touch from touchBegan and check that the current touch is the same
-    // as that one.
-    // Actually, it would be even more complicated since in the Cocos dispatcher
-    // you get Sets instead of 1 UITouch, so you'd need to loop through the set
-    // in each touchXXX method.
-    
-    CCLOG("Paddle::onTouchMoved id = %d, x = %f, y = %f", touch->getID(), touch->getLocation().x, touch->getLocation().y);
-    
-    CCASSERT(_state == kPaddleStateGrabbed, "Paddle - Unexpected state!");
-    
     auto touchPoint = touch->getLocation();
 
     if (moveRight)
@@ -164,12 +150,9 @@ SlideTile* SlideTile::clone() const
 
 void SlideTile::onTouchEnded(Touch* touch, Event* event)
 {
-    CCASSERT(_state == kPaddleStateGrabbed, "Paddle - Unexpected state!");
-
     if (moveDown || moveLeft || moveRight || moveUp)
     {
         Size visibleSize = Director::getInstance()->getVisibleSize();
-        //Point origin = Director::getInstance()->getVisibleOrigin();
         Point touchPos = getPosition();
     
         Point finalPos;
@@ -186,6 +169,7 @@ void SlideTile::onTouchEnded(Touch* touch, Event* event)
     
         finalPos.y = visibleSize.height / 2;
         row = 1;
+        
         if (touchPos.y < visibleSize.height / 2 - getBoundingBox().size.height / 2) {
             finalPos.y -= getBoundingBox().size.height;
             row++;
@@ -200,5 +184,5 @@ void SlideTile::onTouchEnded(Touch* touch, Event* event)
         moveDown = false;
         moveUp = false;
     }
-    _state = kPaddleStateUngrabbed;
+    _state = TileUngrabbed;
 } 

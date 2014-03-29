@@ -2,7 +2,6 @@
 #define __HELP_SCENE_H__
 
 #include "cocos2d.h"
-#include "CameraInterface.h"
 
 class HelpScene : public cocos2d::Layer
 {

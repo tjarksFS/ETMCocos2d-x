@@ -1,21 +1,21 @@
-#ifndef _PADDLE_H_
-#define _PADDLE_H_
+#ifndef _SLIDETILE_H_
+#define _SLIDETILE_H_
 
 #include "cocos2d.h"
 USING_NS_CC;
 
-typedef enum tagPaddleState
+typedef enum tagTileState
 {
-    kPaddleStateGrabbed,
-    kPaddleStateUngrabbed
-} PaddleState;
+    TileGrabbed,
+    TileUngrabbed
+} TileState;
 
 class SlideTile : public Sprite, public Clonable
 {
 private:
     cocos2d::Point touchStartPos;
 public:
-    PaddleState        _state;
+    TileState        _state;
     bool               moveRight;
     bool               moveLeft;
     bool               moveUp;

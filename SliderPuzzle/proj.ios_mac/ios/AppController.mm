@@ -46,43 +46,11 @@ static AppDelegate s_sharedApplication;
     // Add the view controller's view to the window and display.
     self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
 
-    // Init the CCEAGLView
-    /*CCEAGLView *eaglView = [CCEAGLView viewWithFrame: [window bounds]
-                                     pixelFormat: kEAGLColorFormatRGB565
-                                     depthFormat: GL_DEPTH24_STENCIL8_OES
-                              preserveBackbuffer: NO
-                                      sharegroup: nil
-                                   multiSampling: NO
-                                 numberOfSamples: 0];
-*/
-    // Use RootViewController manage CCEAGLView 
     self.viewController = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
-    //self.viewController.wantsFullScreenLayout = YES;
-    //self.viewController.view = eaglView;
 
-    // Set RootViewController to window
-   /* if ( [[UIDevice currentDevice].systemVersion floatValue] < 6.0)
-    {
-        // warning: addSubView doesn't work on iOS6
-        [window addSubview: viewController.view];
-    }
-    else
-    {
-        // use this method on ios6
-        [self.window setRootViewController:self.viewController];
-    }
-*/
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
-
-    //[[UIApplication sharedApplication] setStatusBarHidden:true];
-
-    // IMPORTANT: Setting the GLView should be done after creating the RootViewController
-    //cocos2d::GLView *glview = cocos2d::GLView::createWithEAGLView(eaglView);
-    //cocos2d::Director::getInstance()->setOpenGLView(glview);
-
-    //cocos2d::Application::getInstance()->run();
-
+    
     return YES;
 }
 

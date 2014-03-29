@@ -26,8 +26,6 @@ bool HelpScene::init()
     {
         return false;
     }
-
-    //CameraInterface::GetCameraPicture();
     
     cocos2d::Size visibleSize = Director::getInstance()->getVisibleSize();
     cocos2d::Point origin = Director::getInstance()->getVisibleOrigin();
@@ -96,7 +94,6 @@ void HelpScene::menuCloseCallback(Ref* pSender)
     Director::getInstance()->end();
     
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-    //CameraInterface::GetCameraPicture();
     exit(0);
 #endif
 }

@@ -30,7 +30,6 @@
 		3E6276AC18E4EE4D00A9F11E /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6276AB18E4EE4D00A9F11E /* RootViewController.xib */; };
 		3E6276AF18E504B500A9F11E /* MyGameViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3E6276AE18E504B500A9F11E /* MyGameViewController.mm */; };
 		3E6276B118E5BECF00A9F11E /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E6276B018E5BECF00A9F11E /* title.png */; };
-		3E8B458F18E3056C00EA3826 /* CameraInterfaceObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B458E18E3056C00EA3826 /* CameraInterfaceObjC.m */; };
 		3E906EBB18D5F3D300F9232E /* gamebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E906EB818D5F3D300F9232E /* gamebutton.png */; };
 		3E906EBC18D5F3D300F9232E /* helpbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E906EB918D5F3D300F9232E /* helpbutton.png */; };
 		3E906EBD18D5F3D300F9232E /* homebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E906EBA18D5F3D300F9232E /* homebutton.png */; };
@@ -38,11 +37,9 @@
 		3EC8AA1818D5EF750069B968 /* HelpScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3EC8AA1618D5EF750069B968 /* HelpScene.cpp */; };
 		3EC8AA1B18D5EF8A0069B968 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3EC8AA1918D5EF8A0069B968 /* GameScene.cpp */; };
 		3ECA76CC18E27233009A6D1A /* SlideTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3ECA76CA18E27233009A6D1A /* SlideTile.cpp */; };
-		3ECA76D118E2947C009A6D1A /* CameraInterface.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3ECA76D018E2947C009A6D1A /* CameraInterface.mm */; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10017EB989F00D1A890 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
 		503AE10117EB989F00D1A890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FC17EB989F00D1A890 /* main.m */; };
-		503AE10217EB989F00D1A890 /* RootViewController2.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FF17EB989F00D1A890 /* RootViewController2.mm */; };
 		503AE10517EB98FF00D1A890 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 503AE10317EB98FF00D1A890 /* main.cpp */; };
 		503AE11217EB99EE00D1A890 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 503AE11117EB99EE00D1A890 /* libcurl.dylib */; };
 		503AE11B17EB9C5A00D1A890 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503AE11A17EB9C5A00D1A890 /* IOKit.framework */; };
@@ -249,8 +246,6 @@
 		3E6276AD18E504B500A9F11E /* MyGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyGameViewController.h; path = ../Classes/MyGameViewController.h; sourceTree = "<group>"; };
 		3E6276AE18E504B500A9F11E /* MyGameViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MyGameViewController.mm; path = ../Classes/MyGameViewController.mm; sourceTree = "<group>"; };
 		3E6276B018E5BECF00A9F11E /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = title.png; path = ../Art/title.png; sourceTree = "<group>"; };
-		3E8B458D18E3056C00EA3826 /* CameraInterfaceObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraInterfaceObjC.h; path = ios/CameraInterfaceObjC.h; sourceTree = SOURCE_ROOT; };
-		3E8B458E18E3056C00EA3826 /* CameraInterfaceObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraInterfaceObjC.m; path = ios/CameraInterfaceObjC.m; sourceTree = SOURCE_ROOT; };
 		3E906EB818D5F3D300F9232E /* gamebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gamebutton.png; path = ../Art/gamebutton.png; sourceTree = "<group>"; };
 		3E906EB918D5F3D300F9232E /* helpbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = helpbutton.png; path = ../Art/helpbutton.png; sourceTree = "<group>"; };
 		3E906EBA18D5F3D300F9232E /* homebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = homebutton.png; path = ../Art/homebutton.png; sourceTree = "<group>"; };
@@ -261,16 +256,12 @@
 		3EC8AA1A18D5EF8A0069B968 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = ../Classes/GameScene.h; sourceTree = "<group>"; };
 		3ECA76CA18E27233009A6D1A /* SlideTile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SlideTile.cpp; path = ../Classes/SlideTile.cpp; sourceTree = "<group>"; };
 		3ECA76CB18E27233009A6D1A /* SlideTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SlideTile.h; path = ../Classes/SlideTile.h; sourceTree = "<group>"; };
-		3ECA76CF18E2947C009A6D1A /* CameraInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraInterface.h; path = ios/CameraInterface.h; sourceTree = SOURCE_ROOT; };
-		3ECA76D018E2947C009A6D1A /* CameraInterface.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CameraInterface.mm; path = ios/CameraInterface.mm; sourceTree = SOURCE_ROOT; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503AE0FA17EB989F00D1A890 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ios/AppController.h; sourceTree = SOURCE_ROOT; };
 		503AE0FB17EB989F00D1A890 /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppController.mm; path = ios/AppController.mm; sourceTree = SOURCE_ROOT; };
 		503AE0FC17EB989F00D1A890 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ios/main.m; sourceTree = SOURCE_ROOT; };
 		503AE0FD17EB989F00D1A890 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = ios/Prefix.pch; sourceTree = SOURCE_ROOT; };
-		503AE0FE17EB989F00D1A890 /* RootViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController2.h; path = ios/RootViewController2.h; sourceTree = SOURCE_ROOT; };
-		503AE0FF17EB989F00D1A890 /* RootViewController2.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RootViewController2.mm; path = ios/RootViewController2.mm; sourceTree = SOURCE_ROOT; };
 		503AE10317EB98FF00D1A890 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = mac/main.cpp; sourceTree = "<group>"; };
 		503AE10417EB98FF00D1A890 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = mac/Prefix.pch; sourceTree = "<group>"; };
 		503AE11117EB99EE00D1A890 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = usr/lib/libcurl.dylib; sourceTree = SDKROOT; };
@@ -363,12 +354,6 @@
 				503AE0FB17EB989F00D1A890 /* AppController.mm */,
 				503AE0FC17EB989F00D1A890 /* main.m */,
 				503AE0FD17EB989F00D1A890 /* Prefix.pch */,
-				503AE0FE17EB989F00D1A890 /* RootViewController2.h */,
-				503AE0FF17EB989F00D1A890 /* RootViewController2.mm */,
-				3ECA76CF18E2947C009A6D1A /* CameraInterface.h */,
-				3ECA76D018E2947C009A6D1A /* CameraInterface.mm */,
-				3E8B458D18E3056C00EA3826 /* CameraInterfaceObjC.h */,
-				3E8B458E18E3056C00EA3826 /* CameraInterfaceObjC.m */,
 				3E6276AB18E4EE4D00A9F11E /* RootViewController.xib */,
 			);
 			name = ios;
@@ -732,14 +717,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E8B458F18E3056C00EA3826 /* CameraInterfaceObjC.m in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
-				503AE10217EB989F00D1A890 /* RootViewController2.mm in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				3EC8AA1B18D5EF8A0069B968 /* GameScene.cpp in Sources */,
 				1AFAF8B816D35DE700DB1158 /* MainMenuScene.cpp in Sources */,
-				3ECA76D118E2947C009A6D1A /* CameraInterface.mm in Sources */,
 				3E6276AF18E504B500A9F11E /* MyGameViewController.mm in Sources */,
 				3E62769718E48F4200A9F11E /* RootViewController.m in Sources */,
 				3EC8AA1818D5EF750069B968 /* HelpScene.cpp in Sources */,

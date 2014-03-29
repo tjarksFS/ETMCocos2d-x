@@ -32,6 +32,7 @@ public:
     
     // implement the "static create()" method manually
     //CREATE_FUNC(GameScene);
+    // Manually implementing create function in order to accept a parameter
     static GameScene* create(const char* gamePic)
     {
         GameScene *pRet = new GameScene();
@@ -47,7 +48,7 @@ public:
             return NULL;
         }
     }
-
+    
     void doStep(float delta);
     void setAllTiles();
     bool checkWin();
